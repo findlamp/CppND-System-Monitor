@@ -21,7 +21,7 @@ class Path {
     public:
         static string basePath() 
         {
-            return "/proc/";
+            return "/proc";
         }
         static string cmdPath()
         {
