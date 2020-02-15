@@ -40,7 +40,7 @@ std::string Util::getProgressBar(std::string percent)
 std::ifstream Util::getStream(std::string path)
 {
     std::ifstream stream(path);
-    if(!stream){
+    if  (!stream) {
         throw std::runtime_error("Non - existing PID");
     }
     return stream;

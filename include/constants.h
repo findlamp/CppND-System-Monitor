@@ -1,6 +1,3 @@
-#ifndef PATH_H
-#define PATH_H
-
 #include <string>
 using namespace std;
 
@@ -33,20 +30,19 @@ class Path {
         }
         static string statPath()
         {
-            return "stat";
+            return "/stat";
         }
         static string upTimePath()
         {
-            return "uptime";
+            return "/uptime";
         }
         static string memInfoPath()
         {
-            return "meminfo";
+            return "/meminfo";
         }
         static string versionPath()
         {
-            return "version";
+            return "/version";
         }
 };
 
-endif // PATH_H
