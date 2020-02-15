@@ -6,7 +6,7 @@ class Util{
         static std::string convertToTime(long int input_seconds);
         static std::string getProgressBar(std::string percent);
         static std::ifstream getStream(std::string path);
-}
+}l;
 
 std::string Util::convertToTime(long int input_seconds)
 {
@@ -33,6 +33,7 @@ std::string Util::getProgressBar(std::string percent)
         }
     }
     result+= " " + percent.substr(0,5) + "/100%";
+    return result;
 
 }
 
@@ -40,7 +41,7 @@ std::ifstream Util::getStream(std::string path)
 {
     std::ifstream stream(path);
     if(!stream){
-        throw std::runtime_error("Non - existing PID")
+        throw std::runtime_error("Non - existing PID");
     }
     return stream;
 }
