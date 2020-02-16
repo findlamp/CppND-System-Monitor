@@ -1,5 +1,7 @@
+#include <iostream>
 #include <string>
-using namespace std;
+#include <bits/stdc++.h>
+using std::string;
 
 enum CPUStates {
     S_USER = 1,
